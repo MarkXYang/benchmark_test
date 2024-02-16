@@ -1,0 +1,42 @@
+$ time ./fib_cpp 45
+1134903170
+
+real	0m3.236s
+user	0m3.231s
+sys	0m0.004s
+
+$ time ./fib_rust 45
+1134903170
+
+real	0m3.637s
+user	0m3.637s
+sys	0m0.000s
+
+$ time ./fib_mojo 
+Fibonacci(45) with Mojo: {} 1134903170
+
+real	0m4.427s
+user	0m4.423s
+sys	0m0.004s
+
+$ time mojo fib_mojo.mojo 
+Fibonacci(45) with Mojo: {} 1134903170
+
+real	0m4.731s
+user	0m4.742s
+sys	0m0.068s
+
+$ time ./fib_dlang
+Fibonacci(45) = 1134903170
+
+real	0m9.882s
+user	0m9.854s
+sys	0m0.000s
+
+$ time python3 fib_python.py 
+1134903170
+
+real	5m50.510s
+user	5m50.306s
+sys	0m0.076s
+
